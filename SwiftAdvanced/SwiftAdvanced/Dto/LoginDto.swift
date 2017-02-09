@@ -26,11 +26,5 @@ class LoginDto: Mappable {
         userNameText    <- map["userNameText"]
         passwordText         <- map["passwordText"]
     }
-
-
-//    init(userText:String, passText:String) {
-//        self.userNameText = userText
-//        self.passwordText = passText
-//    }
-
+    
 }
