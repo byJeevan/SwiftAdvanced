@@ -43,6 +43,7 @@
 		3CD456961E4C6ACE00F980D8 /* line.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CD4568F1E4C6ACE00F980D8 /* line.png */; };
 		3CD456971E4C6ACE00F980D8 /* login_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CD456901E4C6ACE00F980D8 /* login_logo.png */; };
 		3CD456981E4C6ACE00F980D8 /* underline.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CD456911E4C6ACE00F980D8 /* underline.png */; };
+		7588008EB66298A56F70A3DA /* libPods-SwiftAdvanced.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FBBDC2495980C054B23851B1 /* libPods-SwiftAdvanced.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,8 @@
 		19FEE9FE1E4C6E30008E47A7 /* TransformOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformOperators.swift; sourceTree = "<group>"; };
 		19FEE9FF1E4C6E30008E47A7 /* TransformType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformType.swift; sourceTree = "<group>"; };
 		19FEEA001E4C6E30008E47A7 /* URLTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLTransform.swift; sourceTree = "<group>"; };
+		19FEEA241E4C7D9B008E47A7 /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		35E36666E9173C27F4066922 /* Pods-SwiftAdvanced.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAdvanced.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftAdvanced/Pods-SwiftAdvanced.debug.xcconfig"; sourceTree = "<group>"; };
 		3CD456551E4C67FA00F980D8 /* SwiftAdvanced.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAdvanced.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CD456581E4C67FA00F980D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CD4565A1E4C67FA00F980D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +109,8 @@
 		3CD4568F1E4C6ACE00F980D8 /* line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = line.png; sourceTree = "<group>"; };
 		3CD456901E4C6ACE00F980D8 /* login_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_logo.png; sourceTree = "<group>"; };
 		3CD456911E4C6ACE00F980D8 /* underline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = underline.png; sourceTree = "<group>"; };
+		66E2629CAB4C30B55542991D /* Pods-SwiftAdvanced.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAdvanced.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftAdvanced/Pods-SwiftAdvanced.release.xcconfig"; sourceTree = "<group>"; };
+		FBBDC2495980C054B23851B1 /* libPods-SwiftAdvanced.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwiftAdvanced.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7588008EB66298A56F70A3DA /* libPods-SwiftAdvanced.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,11 +169,23 @@
 			path = Mapper;
 			sourceTree = "<group>";
 		};
+		2D3085B64CF1D483F974CBEB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35E36666E9173C27F4066922 /* Pods-SwiftAdvanced.debug.xcconfig */,
+				66E2629CAB4C30B55542991D /* Pods-SwiftAdvanced.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3CD4564C1E4C67FA00F980D8 = {
 			isa = PBXGroup;
 			children = (
+				19FEEA241E4C7D9B008E47A7 /* Bridge.h */,
 				3CD456861E4C696500F980D8 /* Supporting Files */,
 				3CD456571E4C67FA00F980D8 /* SwiftAdvanced */,
+				2D3085B64CF1D483F974CBEB /* Pods */,
+				A15CED1C4402D0CACF3E61C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -256,6 +274,14 @@
 			name = Assets;
 			sourceTree = "<group>";
 		};
+		A15CED1C4402D0CACF3E61C5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBBDC2495980C054B23851B1 /* libPods-SwiftAdvanced.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -263,9 +289,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3CD4567D1E4C67FA00F980D8 /* Build configuration list for PBXNativeTarget "SwiftAdvanced" */;
 			buildPhases = (
+				D71F9A55A63E5120C246C2F9 /* [CP] Check Pods Manifest.lock */,
 				3CD456511E4C67FA00F980D8 /* Sources */,
 				3CD456521E4C67FA00F980D8 /* Frameworks */,
 				3CD456531E4C67FA00F980D8 /* Resources */,
+				7F7F662B6E9F669808591D80 /* [CP] Embed Pods Frameworks */,
+				02990D92B61B646AA142480D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -392,6 +421,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02990D92B61B646AA142480D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftAdvanced/Pods-SwiftAdvanced-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7F7F662B6E9F669808591D80 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftAdvanced/Pods-SwiftAdvanced-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D71F9A55A63E5120C246C2F9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3CD456511E4C67FA00F980D8 /* Sources */ = {
@@ -571,6 +648,7 @@
 		};
 		3CD4567E1E4C67FA00F980D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35E36666E9173C27F4066922 /* Pods-SwiftAdvanced.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftAdvanced/Info.plist;
@@ -578,6 +656,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.byjeevan.SwiftAdvanced;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = bridge.h;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -585,6 +664,7 @@
 		};
 		3CD4567F1E4C67FA00F980D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66E2629CAB4C30B55542991D /* Pods-SwiftAdvanced.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftAdvanced/Info.plist;
@@ -592,6 +672,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.byjeevan.SwiftAdvanced;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = bridge.h;
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
