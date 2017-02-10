@@ -37,7 +37,7 @@ class Field: NSObject {
               //Gaurd - touch event when no error.
         }
         else{
-            self.errorMessageLabel?.isHidden = !(self.errorHintView?.isHidden)!;
+            self.errorMessageLabel?.isHidden = !(self.errorMessageLabel?.isHidden)!;
         }
     }
     

@@ -121,7 +121,7 @@
                         <outlet property="emailErrorLabel" destination="RFy-Wi-JOt" id="UUj-7d-vfm"/>
                         <outlet property="emailField" destination="r15-aI-ek8" id="SPh-Pv-fys"/>
                         <outlet property="passErrorIcon" destination="IE4-xq-bS1" id="Js0-gr-Foo"/>
-                        <outlet property="passErrorLabel" destination="RFy-Wi-JOt" id="7js-t6-2QS"/>
+                        <outlet property="passErrorLabel" destination="Gbb-i9-oKr" id="bT6-RW-h1y"/>
                         <outlet property="passField" destination="2Z7-CW-Ubu" id="Q3h-ON-gWs"/>
                     </connections>
                 </viewController>

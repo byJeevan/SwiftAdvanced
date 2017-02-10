@@ -15,11 +15,9 @@ class Fields : NSObject {
     var dependencyField: Field?
 
      convenience init(field firstField: Field, andDependenctyField dependencyField: Field?) {
-        
         self.init()
         self.firstField = firstField
         self.dependencyField = dependencyField
-        
     }
     
 }
