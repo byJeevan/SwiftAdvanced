@@ -38,6 +38,21 @@
 		3C7B59C11E4D6EA10093F5AC /* ViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B59C01E4D6EA10093F5AC /* ViewWrapper.swift */; };
 		3C7B59C41E4D75B30093F5AC /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B59C31E4D75B30093F5AC /* Form.swift */; };
 		3C7B59C61E4D75BB0093F5AC /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B59C51E4D75BB0093F5AC /* Field.swift */; };
+		3C7B59C81E4D78F60093F5AC /* Fields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B59C71E4D78F60093F5AC /* Fields.swift */; };
+		3C7B59CB1E4D997B0093F5AC /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B59CA1E4D997B0093F5AC /* Validator.swift */; };
+		3C7B59CD1E4D9B750093F5AC /* IsValidEmail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B59CC1E4D9B750093F5AC /* IsValidEmail.swift */; };
+		3C7B59CF1E4D9B840093F5AC /* IsEmpty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B59CE1E4D9B840093F5AC /* IsEmpty.swift */; };
+		3C7B59D11E4D9B940093F5AC /* IsNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B59D01E4D9B940093F5AC /* IsNumber.swift */; };
+		3C7B59D31E4D9BA10093F5AC /* IsAlphabet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B59D21E4D9BA10093F5AC /* IsAlphabet.swift */; };
+		3C7B59D51E4D9BAD0093F5AC /* IsAlphaNumeric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B59D41E4D9BAD0093F5AC /* IsAlphaNumeric.swift */; };
+		3C7B59D71E4D9BBA0093F5AC /* IsValidDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B59D61E4D9BBA0093F5AC /* IsValidDate.swift */; };
+		3C7B59D91E4D9BC90093F5AC /* IsPositiveNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B59D81E4D9BC90093F5AC /* IsPositiveNumber.swift */; };
+		3C7B59DB1E4D9BE70093F5AC /* IsValidMonthYear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B59DA1E4D9BE70093F5AC /* IsValidMonthYear.swift */; };
+		3C7B59DD1E4D9BF40093F5AC /* IsInRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B59DC1E4D9BF40093F5AC /* IsInRange.swift */; };
+		3C7B59DF1E4D9C060093F5AC /* IsValidLength.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B59DE1E4D9C060093F5AC /* IsValidLength.swift */; };
+		3C7B59E11E4D9C110093F5AC /* IsAadhaarNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B59E01E4D9C110093F5AC /* IsAadhaarNumber.swift */; };
+		3C7B59E31E4D9C180093F5AC /* IsPanNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B59E21E4D9C180093F5AC /* IsPanNumber.swift */; };
+		3C7B59E51E4D9C270093F5AC /* IsValidTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B59E41E4D9C270093F5AC /* IsValidTime.swift */; };
 		3CD456591E4C67FA00F980D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD456581E4C67FA00F980D8 /* AppDelegate.swift */; };
 		3CD4565B1E4C67FA00F980D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD4565A1E4C67FA00F980D8 /* ViewController.swift */; };
 		3CD4565E1E4C67FA00F980D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CD4565C1E4C67FA00F980D8 /* Main.storyboard */; };
@@ -98,7 +113,7 @@
 		19FEEA001E4C6E30008E47A7 /* URLTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLTransform.swift; sourceTree = "<group>"; };
 		19FEEA241E4C7D9B008E47A7 /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Bridge.h; path = ../Bridge.h; sourceTree = "<group>"; };
 		19FEEA261E4C843A008E47A7 /* BaseAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAdapter.swift; sourceTree = "<group>"; };
-		19FEEA2A1E4C8489008E47A7 /* SABaseAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SABaseAdapter.swift; sourceTree = "<group>"; };
+		19FEEA2A1E4C8489008E47A7 /* SABaseAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SABaseAdapter.swift; path = BaseAdapter/SABaseAdapter.swift; sourceTree = "<group>"; };
 		19FEEA2D1E4C84E0008E47A7 /* LoginDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginDto.swift; sourceTree = "<group>"; };
 		19FEEA2E1E4C84E0008E47A7 /* ResponseDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseDto.swift; sourceTree = "<group>"; };
 		35E36666E9173C27F4066922 /* Pods-SwiftAdvanced.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAdvanced.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftAdvanced/Pods-SwiftAdvanced.debug.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +122,21 @@
 		3C7B59C01E4D6EA10093F5AC /* ViewWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewWrapper.swift; sourceTree = "<group>"; };
 		3C7B59C31E4D75B30093F5AC /* Form.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
 		3C7B59C51E4D75BB0093F5AC /* Field.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
+		3C7B59C71E4D78F60093F5AC /* Fields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fields.swift; sourceTree = "<group>"; };
+		3C7B59CA1E4D997B0093F5AC /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		3C7B59CC1E4D9B750093F5AC /* IsValidEmail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsValidEmail.swift; sourceTree = "<group>"; };
+		3C7B59CE1E4D9B840093F5AC /* IsEmpty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsEmpty.swift; sourceTree = "<group>"; };
+		3C7B59D01E4D9B940093F5AC /* IsNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsNumber.swift; sourceTree = "<group>"; };
+		3C7B59D21E4D9BA10093F5AC /* IsAlphabet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsAlphabet.swift; sourceTree = "<group>"; };
+		3C7B59D41E4D9BAD0093F5AC /* IsAlphaNumeric.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsAlphaNumeric.swift; sourceTree = "<group>"; };
+		3C7B59D61E4D9BBA0093F5AC /* IsValidDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsValidDate.swift; sourceTree = "<group>"; };
+		3C7B59D81E4D9BC90093F5AC /* IsPositiveNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsPositiveNumber.swift; sourceTree = "<group>"; };
+		3C7B59DA1E4D9BE70093F5AC /* IsValidMonthYear.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IsValidMonthYear\U0010.swift"; sourceTree = "<group>"; };
+		3C7B59DC1E4D9BF40093F5AC /* IsInRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsInRange.swift; sourceTree = "<group>"; };
+		3C7B59DE1E4D9C060093F5AC /* IsValidLength.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsValidLength.swift; sourceTree = "<group>"; };
+		3C7B59E01E4D9C110093F5AC /* IsAadhaarNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsAadhaarNumber.swift; sourceTree = "<group>"; };
+		3C7B59E21E4D9C180093F5AC /* IsPanNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsPanNumber.swift; sourceTree = "<group>"; };
+		3C7B59E41E4D9C270093F5AC /* IsValidTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Is\U0010ValidTime.swift"; sourceTree = "<group>"; };
 		3CD456551E4C67FA00F980D8 /* SwiftAdvanced.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAdvanced.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CD456581E4C67FA00F980D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CD4565A1E4C67FA00F980D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -190,7 +220,6 @@
 		19FEEA251E4C842B008E47A7 /* BaseAdapter */ = {
 			isa = PBXGroup;
 			children = (
-				19FEEA2A1E4C8489008E47A7 /* SABaseAdapter.swift */,
 				19FEEA261E4C843A008E47A7 /* BaseAdapter.swift */,
 			);
 			path = BaseAdapter;
@@ -218,6 +247,7 @@
 		3C7B59BA1E4D6E530093F5AC /* Form */ = {
 			isa = PBXGroup;
 			children = (
+				3C7B59C91E4D996A0093F5AC /* Validators */,
 				3C7B59C21E4D758C0093F5AC /* Views */,
 				3C7B59BB1E4D6E630093F5AC /* View Wrappers */,
 			);
@@ -238,9 +268,39 @@
 			isa = PBXGroup;
 			children = (
 				3C7B59C31E4D75B30093F5AC /* Form.swift */,
+				3C7B59C71E4D78F60093F5AC /* Fields.swift */,
 				3C7B59C51E4D75BB0093F5AC /* Field.swift */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		3C7B59C91E4D996A0093F5AC /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				3C7B59CA1E4D997B0093F5AC /* Validator.swift */,
+				3C7B59CC1E4D9B750093F5AC /* IsValidEmail.swift */,
+				3C7B59CE1E4D9B840093F5AC /* IsEmpty.swift */,
+				3C7B59D01E4D9B940093F5AC /* IsNumber.swift */,
+				3C7B59D21E4D9BA10093F5AC /* IsAlphabet.swift */,
+				3C7B59D41E4D9BAD0093F5AC /* IsAlphaNumeric.swift */,
+				3C7B59D61E4D9BBA0093F5AC /* IsValidDate.swift */,
+				3C7B59D81E4D9BC90093F5AC /* IsPositiveNumber.swift */,
+				3C7B59DA1E4D9BE70093F5AC /* IsValidMonthYear.swift */,
+				3C7B59DC1E4D9BF40093F5AC /* IsInRange.swift */,
+				3C7B59DE1E4D9C060093F5AC /* IsValidLength.swift */,
+				3C7B59E01E4D9C110093F5AC /* IsAadhaarNumber.swift */,
+				3C7B59E21E4D9C180093F5AC /* IsPanNumber.swift */,
+				3C7B59E41E4D9C270093F5AC /* IsValidTime.swift */,
+			);
+			name = Validators;
+			sourceTree = "<group>";
+		};
+		3C7B59E61E4DC79E0093F5AC /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				19FEEA2A1E4C8489008E47A7 /* SABaseAdapter.swift */,
+			);
+			name = Adapters;
 			sourceTree = "<group>";
 		};
 		3CD4564C1E4C67FA00F980D8 = {
@@ -266,7 +326,7 @@
 		3CD456571E4C67FA00F980D8 /* SwiftAdvanced */ = {
 			isa = PBXGroup;
 			children = (
-				19FEEA251E4C842B008E47A7 /* BaseAdapter */,
+				3C7B59E61E4DC79E0093F5AC /* Adapters */,
 				19FEEA2C1E4C84D5008E47A7 /* Dto */,
 				3CD456881E4C69CE00F980D8 /* Controllers */,
 				3CD456871E4C69C300F980D8 /* Core */,
@@ -312,6 +372,7 @@
 		3CD456871E4C69C300F980D8 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				19FEEA251E4C842B008E47A7 /* BaseAdapter */,
 				3C7B59BA1E4D6E530093F5AC /* Form */,
 				19FEE9DF1E4C6DFC008E47A7 /* Mapper */,
 			);
@@ -546,8 +607,11 @@
 				19FEE9F31E4C6E24008E47A7 /* ImmutableMappable.swift in Sources */,
 				3C7B59BD1E4D6E860093F5AC /* ViewWrapperFactory.swift in Sources */,
 				19FEEA271E4C843A008E47A7 /* BaseAdapter.swift in Sources */,
+				3C7B59CF1E4D9B840093F5AC /* IsEmpty.swift in Sources */,
+				3C7B59D51E4D9BAD0093F5AC /* IsAlphaNumeric.swift in Sources */,
 				3C7B59C11E4D6EA10093F5AC /* ViewWrapper.swift in Sources */,
 				19FEEA011E4C6E30008E47A7 /* ISO8601DateTransform.swift in Sources */,
+				3C7B59D71E4D9BBA0093F5AC /* IsValidDate.swift in Sources */,
 				19FEE9EB1E4C6E24008E47A7 /* DataTransform.swift in Sources */,
 				19FEE9EE1E4C6E24008E47A7 /* DictionaryTransform.swift in Sources */,
 				19FEEA0A1E4C6E30008E47A7 /* TransformOperators.swift in Sources */,
@@ -556,24 +620,36 @@
 				19FEEA071E4C6E30008E47A7 /* Operators.swift in Sources */,
 				3C7B59BF1E4D6E920093F5AC /* UITextFieldViewWrapper.swift in Sources */,
 				19FEE9E11E4C6E18008E47A7 /* CustomDateFormatTransform.swift in Sources */,
+				3C7B59D11E4D9B940093F5AC /* IsNumber.swift in Sources */,
 				19FEEA081E4C6E30008E47A7 /* ToJSON.swift in Sources */,
+				3C7B59E31E4D9C180093F5AC /* IsPanNumber.swift in Sources */,
+				3C7B59DF1E4D9C060093F5AC /* IsValidLength.swift in Sources */,
 				19FEEA0B1E4C6E30008E47A7 /* TransformType.swift in Sources */,
 				19FEE9ED1E4C6E24008E47A7 /* DateTransform.swift in Sources */,
 				19FEE9F21E4C6E24008E47A7 /* HexColorTransform.swift in Sources */,
+				3C7B59D31E4D9BA10093F5AC /* IsAlphabet.swift in Sources */,
+				3C7B59E51E4D9C270093F5AC /* IsValidTime.swift in Sources */,
 				19FEEA301E4C84E0008E47A7 /* ResponseDto.swift in Sources */,
 				19FEE9F11E4C6E24008E47A7 /* FromJSON.swift in Sources */,
 				19FEEA091E4C6E30008E47A7 /* TransformOf.swift in Sources */,
+				3C7B59D91E4D9BC90093F5AC /* IsPositiveNumber.swift in Sources */,
 				19FEEA051E4C6E30008E47A7 /* Mapper.swift in Sources */,
 				3CD4565B1E4C67FA00F980D8 /* ViewController.swift in Sources */,
+				3C7B59DB1E4D9BE70093F5AC /* IsValidMonthYear.swift in Sources */,
 				19FEEA041E4C6E30008E47A7 /* Mappable.swift in Sources */,
+				3C7B59DD1E4D9BF40093F5AC /* IsInRange.swift in Sources */,
 				19FEEA021E4C6E30008E47A7 /* Map.swift in Sources */,
 				19FEEA2B1E4C8489008E47A7 /* SABaseAdapter.swift in Sources */,
+				3C7B59CD1E4D9B750093F5AC /* IsValidEmail.swift in Sources */,
 				3C7B59C41E4D75B30093F5AC /* Form.swift in Sources */,
+				3C7B59C81E4D78F60093F5AC /* Fields.swift in Sources */,
+				3C7B59E11E4D9C110093F5AC /* IsAadhaarNumber.swift in Sources */,
 				19FEE9F01E4C6E24008E47A7 /* EnumTransform.swift in Sources */,
 				19FEEA0C1E4C6E30008E47A7 /* URLTransform.swift in Sources */,
 				3CD456591E4C67FA00F980D8 /* AppDelegate.swift in Sources */,
 				19FEEA061E4C6E30008E47A7 /* NSDecimalNumberTransform.swift in Sources */,
 				19FEE9EC1E4C6E24008E47A7 /* DateFormatterTransform.swift in Sources */,
+				3C7B59CB1E4D997B0093F5AC /* Validator.swift in Sources */,
 				19FEEA2F1E4C84E0008E47A7 /* LoginDto.swift in Sources */,
 				3C7B59C61E4D75BB0093F5AC /* Field.swift in Sources */,
 			);

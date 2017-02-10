@@ -9,8 +9,7 @@
 import Foundation
 import UIKit
 
-//  Converted with Swiftify v1.0.6242 - https://objectivec2swift.com/
-class UITextFieldViewWrapper: ViewWrapper, ViewWrapperProtocol {
+class UITextFieldViewWrapper: ViewWrapper {
     
     var textField: UITextField!
     
@@ -19,27 +18,23 @@ class UITextFieldViewWrapper: ViewWrapper, ViewWrapperProtocol {
     }
     
     required init?(coder aDecoder: NSCoder) {
-       // fatalError("init(coder:) has not been implemented")
            super.init(coder:aDecoder)
     }
     
     convenience init(view: UIView) {
-
         self.init(frame:view.frame);
-        
         self.textField = (view as? UITextField)
-
     }
     
-    func getText(_ :Void) -> String {
+    override func getText(_ :Void) -> String {
         return self.textField.text!
     }
     
-    func getView(_ :Void) -> UIView {
+    override func getView(_ :Void) -> UIView {
         return self.textField!
     }
     
-    func focusToView(_ :Void) {
+    override func focusToView(_ :Void) {
         self.textField.becomeFirstResponder()
     }
 }
