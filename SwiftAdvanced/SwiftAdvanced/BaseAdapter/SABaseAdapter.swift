@@ -12,7 +12,7 @@ class SABaseAdapter: BaseAdapter {
     
     func LoginDetails(loginDto:LoginDto) {
         
-        let urlString = "http://192.168.3.198:8080/v1/login"
+        let urlString = "http://192.168.3.197:8080/v1/login"
         
         self.performHttpPostRequest(urlString: urlString, dto:loginDto);
     }

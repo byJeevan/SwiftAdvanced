@@ -23,8 +23,8 @@ class LoginDto: Mappable {
     
     // Mappable
     func mapping(map: Map) {
-        userNameText    <- map["userNameText"]
-        passwordText         <- map["passwordText"]
+        userNameText    <- map["userName"]
+        passwordText         <- map["password"]
     }
     
 }

@@ -33,6 +33,11 @@
 		19FEEA2B1E4C8489008E47A7 /* SABaseAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FEEA2A1E4C8489008E47A7 /* SABaseAdapter.swift */; };
 		19FEEA2F1E4C84E0008E47A7 /* LoginDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FEEA2D1E4C84E0008E47A7 /* LoginDto.swift */; };
 		19FEEA301E4C84E0008E47A7 /* ResponseDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FEEA2E1E4C84E0008E47A7 /* ResponseDto.swift */; };
+		3C7B59BD1E4D6E860093F5AC /* ViewWrapperFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B59BC1E4D6E860093F5AC /* ViewWrapperFactory.swift */; };
+		3C7B59BF1E4D6E920093F5AC /* UITextFieldViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B59BE1E4D6E920093F5AC /* UITextFieldViewWrapper.swift */; };
+		3C7B59C11E4D6EA10093F5AC /* ViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B59C01E4D6EA10093F5AC /* ViewWrapper.swift */; };
+		3C7B59C41E4D75B30093F5AC /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B59C31E4D75B30093F5AC /* Form.swift */; };
+		3C7B59C61E4D75BB0093F5AC /* Field.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B59C51E4D75BB0093F5AC /* Field.swift */; };
 		3CD456591E4C67FA00F980D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD456581E4C67FA00F980D8 /* AppDelegate.swift */; };
 		3CD4565B1E4C67FA00F980D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CD4565A1E4C67FA00F980D8 /* ViewController.swift */; };
 		3CD4565E1E4C67FA00F980D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CD4565C1E4C67FA00F980D8 /* Main.storyboard */; };
@@ -91,12 +96,17 @@
 		19FEE9FE1E4C6E30008E47A7 /* TransformOperators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformOperators.swift; sourceTree = "<group>"; };
 		19FEE9FF1E4C6E30008E47A7 /* TransformType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransformType.swift; sourceTree = "<group>"; };
 		19FEEA001E4C6E30008E47A7 /* URLTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLTransform.swift; sourceTree = "<group>"; };
-		19FEEA241E4C7D9B008E47A7 /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bridge.h; sourceTree = "<group>"; };
+		19FEEA241E4C7D9B008E47A7 /* Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Bridge.h; path = ../Bridge.h; sourceTree = "<group>"; };
 		19FEEA261E4C843A008E47A7 /* BaseAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseAdapter.swift; sourceTree = "<group>"; };
 		19FEEA2A1E4C8489008E47A7 /* SABaseAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SABaseAdapter.swift; sourceTree = "<group>"; };
 		19FEEA2D1E4C84E0008E47A7 /* LoginDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginDto.swift; sourceTree = "<group>"; };
 		19FEEA2E1E4C84E0008E47A7 /* ResponseDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseDto.swift; sourceTree = "<group>"; };
 		35E36666E9173C27F4066922 /* Pods-SwiftAdvanced.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAdvanced.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftAdvanced/Pods-SwiftAdvanced.debug.xcconfig"; sourceTree = "<group>"; };
+		3C7B59BC1E4D6E860093F5AC /* ViewWrapperFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewWrapperFactory.swift; sourceTree = "<group>"; };
+		3C7B59BE1E4D6E920093F5AC /* UITextFieldViewWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldViewWrapper.swift; sourceTree = "<group>"; };
+		3C7B59C01E4D6EA10093F5AC /* ViewWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewWrapper.swift; sourceTree = "<group>"; };
+		3C7B59C31E4D75B30093F5AC /* Form.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
+		3C7B59C51E4D75BB0093F5AC /* Field.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Field.swift; sourceTree = "<group>"; };
 		3CD456551E4C67FA00F980D8 /* SwiftAdvanced.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftAdvanced.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CD456581E4C67FA00F980D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CD4565A1E4C67FA00F980D8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -202,15 +212,42 @@
 				66E2629CAB4C30B55542991D /* Pods-SwiftAdvanced.release.xcconfig */,
 			);
 			name = Pods;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		3C7B59BA1E4D6E530093F5AC /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				3C7B59C21E4D758C0093F5AC /* Views */,
+				3C7B59BB1E4D6E630093F5AC /* View Wrappers */,
+			);
+			name = Form;
+			sourceTree = "<group>";
+		};
+		3C7B59BB1E4D6E630093F5AC /* View Wrappers */ = {
+			isa = PBXGroup;
+			children = (
+				3C7B59BC1E4D6E860093F5AC /* ViewWrapperFactory.swift */,
+				3C7B59C01E4D6EA10093F5AC /* ViewWrapper.swift */,
+				3C7B59BE1E4D6E920093F5AC /* UITextFieldViewWrapper.swift */,
+			);
+			name = "View Wrappers";
+			sourceTree = "<group>";
+		};
+		3C7B59C21E4D758C0093F5AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3C7B59C31E4D75B30093F5AC /* Form.swift */,
+				3C7B59C51E4D75BB0093F5AC /* Field.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 		3CD4564C1E4C67FA00F980D8 = {
 			isa = PBXGroup;
 			children = (
-				19FEEA241E4C7D9B008E47A7 /* Bridge.h */,
 				3CD456861E4C696500F980D8 /* Supporting Files */,
 				3CD456571E4C67FA00F980D8 /* SwiftAdvanced */,
-				2D3085B64CF1D483F974CBEB /* Pods */,
 				A15CED1C4402D0CACF3E61C5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -229,6 +266,8 @@
 		3CD456571E4C67FA00F980D8 /* SwiftAdvanced */ = {
 			isa = PBXGroup;
 			children = (
+				19FEEA251E4C842B008E47A7 /* BaseAdapter */,
+				19FEEA2C1E4C84D5008E47A7 /* Dto */,
 				3CD456881E4C69CE00F980D8 /* Controllers */,
 				3CD456871E4C69C300F980D8 /* Core */,
 			);
@@ -256,6 +295,7 @@
 		3CD456861E4C696500F980D8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2D3085B64CF1D483F974CBEB /* Pods */,
 				3CD4568A1E4C6ABC00F980D8 /* Assets */,
 				3CD4566C1E4C67FA00F980D8 /* SwiftAdvancedTests */,
 				3CD456771E4C67FA00F980D8 /* SwiftAdvancedUITests */,
@@ -263,6 +303,7 @@
 				3CD4565F1E4C67FA00F980D8 /* Assets.xcassets */,
 				3CD456611E4C67FA00F980D8 /* LaunchScreen.storyboard */,
 				3CD456641E4C67FA00F980D8 /* Info.plist */,
+				19FEEA241E4C7D9B008E47A7 /* Bridge.h */,
 			);
 			name = "Supporting Files";
 			path = SwiftAdvanced;
@@ -271,8 +312,7 @@
 		3CD456871E4C69C300F980D8 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				19FEEA2C1E4C84D5008E47A7 /* Dto */,
-				19FEEA251E4C842B008E47A7 /* BaseAdapter */,
+				3C7B59BA1E4D6E530093F5AC /* Form */,
 				19FEE9DF1E4C6DFC008E47A7 /* Mapper */,
 			);
 			name = Core;
@@ -504,7 +544,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				19FEE9F31E4C6E24008E47A7 /* ImmutableMappable.swift in Sources */,
+				3C7B59BD1E4D6E860093F5AC /* ViewWrapperFactory.swift in Sources */,
 				19FEEA271E4C843A008E47A7 /* BaseAdapter.swift in Sources */,
+				3C7B59C11E4D6EA10093F5AC /* ViewWrapper.swift in Sources */,
 				19FEEA011E4C6E30008E47A7 /* ISO8601DateTransform.swift in Sources */,
 				19FEE9EB1E4C6E24008E47A7 /* DataTransform.swift in Sources */,
 				19FEE9EE1E4C6E24008E47A7 /* DictionaryTransform.swift in Sources */,
@@ -512,6 +554,7 @@
 				19FEE9EF1E4C6E24008E47A7 /* EnumOperators.swift in Sources */,
 				19FEEA031E4C6E30008E47A7 /* MapError.swift in Sources */,
 				19FEEA071E4C6E30008E47A7 /* Operators.swift in Sources */,
+				3C7B59BF1E4D6E920093F5AC /* UITextFieldViewWrapper.swift in Sources */,
 				19FEE9E11E4C6E18008E47A7 /* CustomDateFormatTransform.swift in Sources */,
 				19FEEA081E4C6E30008E47A7 /* ToJSON.swift in Sources */,
 				19FEEA0B1E4C6E30008E47A7 /* TransformType.swift in Sources */,
@@ -525,12 +568,14 @@
 				19FEEA041E4C6E30008E47A7 /* Mappable.swift in Sources */,
 				19FEEA021E4C6E30008E47A7 /* Map.swift in Sources */,
 				19FEEA2B1E4C8489008E47A7 /* SABaseAdapter.swift in Sources */,
+				3C7B59C41E4D75B30093F5AC /* Form.swift in Sources */,
 				19FEE9F01E4C6E24008E47A7 /* EnumTransform.swift in Sources */,
 				19FEEA0C1E4C6E30008E47A7 /* URLTransform.swift in Sources */,
 				3CD456591E4C67FA00F980D8 /* AppDelegate.swift in Sources */,
 				19FEEA061E4C6E30008E47A7 /* NSDecimalNumberTransform.swift in Sources */,
 				19FEE9EC1E4C6E24008E47A7 /* DateFormatterTransform.swift in Sources */,
 				19FEEA2F1E4C84E0008E47A7 /* LoginDto.swift in Sources */,
+				3C7B59C61E4D75BB0093F5AC /* Field.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,6 +728,7 @@
 			baseConfigurationReference = 35E36666E9173C27F4066922 /* Pods-SwiftAdvanced.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SwiftAdvanced/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -699,6 +745,7 @@
 			baseConfigurationReference = 66E2629CAB4C30B55542991D /* Pods-SwiftAdvanced.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SwiftAdvanced/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

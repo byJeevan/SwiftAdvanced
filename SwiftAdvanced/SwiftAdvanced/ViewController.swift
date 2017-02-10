@@ -8,10 +8,14 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
     
     @IBAction func signInAction(_ sender: Any) {
         
+         let a = SABaseAdapter()
+        
+        a.LoginDetails(loginDto: LoginDto());
         
     }
     
