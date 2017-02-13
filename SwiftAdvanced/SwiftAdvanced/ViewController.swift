@@ -35,14 +35,24 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let fieldEmail = Field.init(view: emailField, errorMessageView: emailErrorLabel, errorHintView: emailErrorIcon, validationsArray:NSArray.init(array: [IsEmpty(), IsValidEmail()]) as! [NSArray])
-        
-        self.form.addNewField(fieldEmail);
-        
-        let fieldPassword = Field.init(view: passField, errorMessageView: passErrorLabel, errorHintView: passErrorIcon, validationsArray:NSArray.init(array: [IsEmpty()]) as! [NSArray])
-        
-        self.form.addNewField(fieldPassword);
+ 
+        //Creating Email Field.
+        let emailField = Field(build: {
+            $0.fieldView = self.emailField
+            $0.errorHintView = self.emailErrorIcon
+            $0.errorMessageLabel = self.emailErrorLabel
+            $0.validationItemsArray = NSArray.init(array: [IsEmpty(), IsValidEmail()])
+        });
+        self.form.addNewField(emailField);
+ 
+        //Creating Password Field.
+        let passField = Field(build: {
+            $0.fieldView = self.passField
+            $0.errorHintView = self.passErrorIcon
+            $0.errorMessageLabel = self.passErrorLabel
+            $0.validationItemsArray = NSArray.init(array: [IsEmpty()])
+        });
+        self.form.addNewField(passField);
     }
     
     override func didReceiveMemoryWarning() {

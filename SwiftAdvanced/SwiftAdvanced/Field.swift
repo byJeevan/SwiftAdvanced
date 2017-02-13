@@ -9,22 +9,31 @@
 import Foundation
 import UIKit
 
-class Field: NSObject {
+protocol FieldBuilderProtocol {
     
+    var fieldView:UIView! {get}
+    var errorMessageLabel:UILabel? {get}
+    var errorHintView:UIView? {get}
+    var validationItemsArray:NSArray? {get}
+    
+}
+
+class Field:FieldBuilderProtocol {
+    
+    var fieldView:UIView!
     var viewWrapperField:ViewWrapper?
     var errorMessageLabel:UILabel?
     var errorHintView:UIView?
     var validationItemsArray:NSArray?
     
-    convenience init(view editView: UIView, errorMessageView messageLabel: UILabel, errorHintView hintView: UIView, validationsArray: [NSArray]) {
-        self.init()
-        self.viewWrapperField = ViewWrapperFactory().getViewWrapper(editView);
-        self.errorMessageLabel = messageLabel
-        self.errorHintView = hintView
-        self.validationItemsArray = validationsArray as NSArray?
+    typealias buildFieldClosure = (Field) -> Void
+    
+    init(build:buildFieldClosure) {
+        build(self)
+        self.viewWrapperField =  ViewWrapperFactory().getViewWrapper(self.fieldView!);
         self.initFieldAttributes()
     }
-    
+   
     func initFieldAttributes() {
         self.errorHintView?.isHidden = true
         self.errorMessageLabel?.isHidden = true
