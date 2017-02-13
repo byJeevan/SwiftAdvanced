@@ -10,4 +10,5 @@
 #define Bridge_h
 
 #import <AFNetworking/AFNetworking.h>
+#import "UIView+TJBinder.h"
 #endif /* Bridge_h */

@@ -8,13 +8,13 @@
 
 import UIKit
 
-class LoginDto: Mappable {
+class LoginDto:NSObject, Mappable {
     
     var userNameText = String()
     var passwordText = String()
     
-    init() {
-        
+    override init() {
+        super.init()
     }
     
     required init?(map: Map) {

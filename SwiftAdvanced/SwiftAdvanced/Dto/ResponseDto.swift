@@ -8,13 +8,13 @@
 
 import UIKit
 
-class ResponseDto: Mappable {
+class ResponseDto:NSObject, Mappable {
     
     var valid = Bool()
     var message = String()
     
-    init() {
-        
+    override init() {
+        super.init()
     }
 
     required init?(map: Map) {

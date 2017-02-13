@@ -33,6 +33,9 @@
 		19FEEA2B1E4C8489008E47A7 /* SABaseAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FEEA2A1E4C8489008E47A7 /* SABaseAdapter.swift */; };
 		19FEEA2F1E4C84E0008E47A7 /* LoginDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FEEA2D1E4C84E0008E47A7 /* LoginDto.swift */; };
 		19FEEA301E4C84E0008E47A7 /* ResponseDto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19FEEA2E1E4C84E0008E47A7 /* ResponseDto.swift */; };
+		3C3E19D81E5171B4003D8C85 /* TJBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E19D11E5171B4003D8C85 /* TJBinder.m */; };
+		3C3E19D91E5171B4003D8C85 /* TJBinderKeyPathParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E19D31E5171B4003D8C85 /* TJBinderKeyPathParser.m */; };
+		3C3E19DA1E5171B4003D8C85 /* UIView+TJBinder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3E19D71E5171B4003D8C85 /* UIView+TJBinder.m */; };
 		3C7B59BD1E4D6E860093F5AC /* ViewWrapperFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B59BC1E4D6E860093F5AC /* ViewWrapperFactory.swift */; };
 		3C7B59BF1E4D6E920093F5AC /* UITextFieldViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B59BE1E4D6E920093F5AC /* UITextFieldViewWrapper.swift */; };
 		3C7B59C11E4D6EA10093F5AC /* ViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B59C01E4D6EA10093F5AC /* ViewWrapper.swift */; };
@@ -117,6 +120,14 @@
 		19FEEA2D1E4C84E0008E47A7 /* LoginDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginDto.swift; sourceTree = "<group>"; };
 		19FEEA2E1E4C84E0008E47A7 /* ResponseDto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseDto.swift; sourceTree = "<group>"; };
 		35E36666E9173C27F4066922 /* Pods-SwiftAdvanced.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftAdvanced.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftAdvanced/Pods-SwiftAdvanced.debug.xcconfig"; sourceTree = "<group>"; };
+		3C3E19D01E5171B4003D8C85 /* TJBinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJBinder.h; sourceTree = "<group>"; };
+		3C3E19D11E5171B4003D8C85 /* TJBinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJBinder.m; sourceTree = "<group>"; };
+		3C3E19D21E5171B4003D8C85 /* TJBinderKeyPathParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJBinderKeyPathParser.h; sourceTree = "<group>"; };
+		3C3E19D31E5171B4003D8C85 /* TJBinderKeyPathParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TJBinderKeyPathParser.m; sourceTree = "<group>"; };
+		3C3E19D41E5171B4003D8C85 /* TJBinderLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJBinderLogger.h; sourceTree = "<group>"; };
+		3C3E19D51E5171B4003D8C85 /* TJDataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TJDataObject.h; sourceTree = "<group>"; };
+		3C3E19D61E5171B4003D8C85 /* UIView+TJBinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TJBinder.h"; sourceTree = "<group>"; };
+		3C3E19D71E5171B4003D8C85 /* UIView+TJBinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TJBinder.m"; sourceTree = "<group>"; };
 		3C7B59BC1E4D6E860093F5AC /* ViewWrapperFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewWrapperFactory.swift; sourceTree = "<group>"; };
 		3C7B59BE1E4D6E920093F5AC /* UITextFieldViewWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldViewWrapper.swift; sourceTree = "<group>"; };
 		3C7B59C01E4D6EA10093F5AC /* ViewWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewWrapper.swift; sourceTree = "<group>"; };
@@ -242,6 +253,21 @@
 			);
 			name = Pods;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		3C3E19CF1E517156003D8C85 /* TJBinder */ = {
+			isa = PBXGroup;
+			children = (
+				3C3E19D01E5171B4003D8C85 /* TJBinder.h */,
+				3C3E19D11E5171B4003D8C85 /* TJBinder.m */,
+				3C3E19D21E5171B4003D8C85 /* TJBinderKeyPathParser.h */,
+				3C3E19D31E5171B4003D8C85 /* TJBinderKeyPathParser.m */,
+				3C3E19D41E5171B4003D8C85 /* TJBinderLogger.h */,
+				3C3E19D51E5171B4003D8C85 /* TJDataObject.h */,
+				3C3E19D61E5171B4003D8C85 /* UIView+TJBinder.h */,
+				3C3E19D71E5171B4003D8C85 /* UIView+TJBinder.m */,
+			);
+			name = TJBinder;
 			sourceTree = "<group>";
 		};
 		3C7B59BA1E4D6E530093F5AC /* Form */ = {
@@ -372,6 +398,7 @@
 		3CD456871E4C69C300F980D8 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				3C3E19CF1E517156003D8C85 /* TJBinder */,
 				19FEEA251E4C842B008E47A7 /* BaseAdapter */,
 				3C7B59BA1E4D6E530093F5AC /* Form */,
 				19FEE9DF1E4C6DFC008E47A7 /* Mapper */,
@@ -612,6 +639,7 @@
 				3C7B59C11E4D6EA10093F5AC /* ViewWrapper.swift in Sources */,
 				19FEEA011E4C6E30008E47A7 /* ISO8601DateTransform.swift in Sources */,
 				3C7B59D71E4D9BBA0093F5AC /* IsValidDate.swift in Sources */,
+				3C3E19D81E5171B4003D8C85 /* TJBinder.m in Sources */,
 				19FEE9EB1E4C6E24008E47A7 /* DataTransform.swift in Sources */,
 				19FEE9EE1E4C6E24008E47A7 /* DictionaryTransform.swift in Sources */,
 				19FEEA0A1E4C6E30008E47A7 /* TransformOperators.swift in Sources */,
@@ -620,6 +648,7 @@
 				19FEEA071E4C6E30008E47A7 /* Operators.swift in Sources */,
 				3C7B59BF1E4D6E920093F5AC /* UITextFieldViewWrapper.swift in Sources */,
 				19FEE9E11E4C6E18008E47A7 /* CustomDateFormatTransform.swift in Sources */,
+				3C3E19DA1E5171B4003D8C85 /* UIView+TJBinder.m in Sources */,
 				3C7B59D11E4D9B940093F5AC /* IsNumber.swift in Sources */,
 				19FEEA081E4C6E30008E47A7 /* ToJSON.swift in Sources */,
 				3C7B59E31E4D9C180093F5AC /* IsPanNumber.swift in Sources */,
@@ -634,6 +663,7 @@
 				19FEEA091E4C6E30008E47A7 /* TransformOf.swift in Sources */,
 				3C7B59D91E4D9BC90093F5AC /* IsPositiveNumber.swift in Sources */,
 				19FEEA051E4C6E30008E47A7 /* Mapper.swift in Sources */,
+				3C3E19D91E5171B4003D8C85 /* TJBinderKeyPathParser.m in Sources */,
 				3CD4565B1E4C67FA00F980D8 /* ViewController.swift in Sources */,
 				3C7B59DB1E4D9BE70093F5AC /* IsValidMonthYear.swift in Sources */,
 				19FEEA041E4C6E30008E47A7 /* Mappable.swift in Sources */,
