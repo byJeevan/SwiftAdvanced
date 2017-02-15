@@ -1,0 +1,22 @@
+/* 
+  Localizable-en.strings
+  SwiftAdvanced
+
+  Created by Jeevan on 13/02/17.
+  Copyright © 2017 com.iosteam.swift. All rights reserved.
+*/
+/* Error messages of Form Validations */
+"invalid.error.email" = "Email ID is not valid";
+"invalid.error.empty" = "Field cannot be empty";
+"invalid.error.number"= "Number is not valid";
+"invalid.error.alphabet" = "Alphabets only allowed";
+"invalid.error.alphanumeric" = "Alphabets or Numbers only allowed";
+"invalid.error.date" = "Date is not valid";
+"invalid.error.positive" = "Number is not postive";
+"invalid.error.monthyear" = "Month or Year not valid";
+"invalid.error.range" = "Range is not valid";
+"invalid.error.length" = "Length is not valid";
+"invalid.error.aadhaar" = "Aadhaar is not valid";
+"invalid.error.pan" = "Pan is not valid";
+"invalid.error.time" = "Time is not valid";
+"invalid.error.dependency.field" = "Cannot be left empty";

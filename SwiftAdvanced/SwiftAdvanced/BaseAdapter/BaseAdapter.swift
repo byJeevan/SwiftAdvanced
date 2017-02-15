@@ -10,26 +10,6 @@ import UIKit
 
 class BaseAdapter: NSObject {
     
-    
-    //Json SuccessFul
-    func jsonLoaded(json: Any) {
-    
-        if let jsonData = try? JSONSerialization.data(withJSONObject: json, options: []) {
-        
-            if let jsonString = String(data: jsonData, encoding: String.Encoding.utf8) {
-                let responseDto = ResponseDto(JSONString: jsonString)
-                print(jsonString)
-            }
-        }
-        print("JSON: \(json)")
-    }
-    
-    //JosnFailed
-    func jsonFailed(error: Error) {
-        print("Error: \(error.localizedDescription)")
-    }
-
-    
     //To Perform GET Request
     func performHttpGetRequest(loginDto:NSDictionary, urlString:String) {
         
@@ -37,31 +17,44 @@ class BaseAdapter: NSObject {
         let manager = AFHTTPSessionManager()
         manager.get((internetURL?.absoluteString)!, parameters: nil, progress: nil, success: {(_ task: URLSessionDataTask, _ responseObject: Any) -> Void in
             
-         self.jsonLoaded(json: responseObject)
+            //         self.jsonLoaded(json: responseObject)
+            
         }, failure: {(task: URLSessionDataTask?, error:Error) -> Void in
-            self.jsonFailed(error: errno as! Error)
+            //         self.jsonFailed(error: errno as! Error)
         })
     }
-
+    
     // ToPerform POST Request
-    func performHttpPostRequest<T: Mappable>(urlString:String, dto:T) { //loginDto:NSDictionary, urlString:String
+    func performHttpPostRequest<T: Mappable>(urlString:String, requestDto:T, responseListner:ResponseListner, errorListner:ErrorListner)  {
         
         let internetURL = NSURL(string:urlString)
         
-        let jsonString = dto.toJSONString()
+        let jsonString = requestDto.toJSONString()
         let parameters = ["data" :  jsonString!]
         
         let config = URLSessionConfiguration.default
         let manager = AFHTTPSessionManager(sessionConfiguration: config)
         manager.requestSerializer = AFJSONRequestSerializer()
         manager.responseSerializer = AFJSONResponseSerializer()
-        manager.post((internetURL?.absoluteString)!, parameters: parameters, progress: nil, success: {(_ task: URLSessionDataTask, _ responseObject: Any) -> Void in
-            
-            self.jsonLoaded(json: responseObject)
+        manager.post((internetURL?.absoluteString)!, parameters: parameters, progress: nil,
+                     success: {(_ task: URLSessionDataTask, _ responseObject: Any) -> Void in
+                        
+                        if let jsonData = try? JSONSerialization.data(withJSONObject: responseObject, options: []) {
+                            
+                            if let jsonString = String(data: jsonData, encoding: String.Encoding.utf8) {
+                                
+                                responseListner.responseListerCallback(result: jsonString)
+                                
+                            }
+                        }
+                        
         },
-        failure: {(task: URLSessionDataTask?, error:Error) -> Void in
-            self.jsonFailed(error: errno as! Error)
+                     failure: {(task: URLSessionDataTask?, error:Error) -> Void in
+                        
+                        errorListner.errorListnerCallback(error: error)
+                        
         })
+        
         
     }
     
@@ -108,5 +101,5 @@ class BaseAdapter: NSObject {
         }
         return nil
     }
-
+    
 }

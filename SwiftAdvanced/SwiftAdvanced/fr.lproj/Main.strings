@@ -1,0 +1,18 @@
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "2Z7-CW-Ubu"; */
+"2Z7-CW-Ubu.placeholder" = "Password";
+
+/* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "E58-2B-5ms"; */
+"E58-2B-5ms.normalTitle" = "Sign Up";
+
+/* Class = "UILabel"; text = "some error occured"; ObjectID = "Gbb-i9-oKr"; */
+"Gbb-i9-oKr.text" = "some error occured";
+
+/* Class = "UILabel"; text = "some error occured"; ObjectID = "RFy-Wi-JOt"; */
+"RFy-Wi-JOt.text" = "some error occured";
+
+/* Class = "UIButton"; normalTitle = "Sign In"; ObjectID = "ilj-AV-mUz"; */
+"ilj-AV-mUz.normalTitle" = "Sign In";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "r15-aI-ek8"; */
+"r15-aI-ek8.placeholder" = "Email";

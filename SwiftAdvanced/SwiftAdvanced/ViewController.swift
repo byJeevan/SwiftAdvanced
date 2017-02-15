@@ -22,22 +22,39 @@ class ViewController: UIViewController {
     
     var form = Form()
     var loginDto = LoginDto()
+
+    
+    public func moveToNext(loginResponseDto:ResponseDto) {
+        
+        //TODO : Push next screen
+        
+    }
+    
     
     @IBAction func signInAction(_ sender: Any) {
         if self.form.isFormValid() {
-            
             self.view.updateDataObjectFromView() //Sync dto from newly entered values.
-            let a = SABaseAdapter()
-            a.LoginDetails(loginDto:loginDto);
-            
+        
+            let loginViewModel = LoginViewModel.init(withController:self);
+            loginViewModel.callLogin(loginDto: self.loginDto)
         }
         else{
             print("Form is not valid ");
         }
     }
     
+    //Delegate of Login view model.
+    func willMoveFromLogin(resposneDto:ResponseDto) {
+        print("Now move to next screen")
+    }
+    
+    func willShowError(error:Error) {
+        print("Show error message")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         //Creating Email Field.
         let emailField = Field(build: {
@@ -52,7 +69,7 @@ class ViewController: UIViewController {
         let passField = Field(build: {
             $0.fieldView = self.passwordText
             $0.errorHintView = self.passErrorIcon
-            $0.errorMessageLabel = nil
+            $0.errorMessageLabel = self.passErrorLabel
             $0.validationItemsArray = NSArray.init(array: [IsEmpty()])
         });
         self.form.addNewField(passField);

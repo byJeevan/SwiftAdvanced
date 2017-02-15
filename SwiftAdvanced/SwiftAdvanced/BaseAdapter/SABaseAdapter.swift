@@ -10,11 +10,11 @@ import UIKit
 
 class SABaseAdapter: BaseAdapter {
     
-    func LoginDetails(loginDto:LoginDto) {
+     public func getLoginDetails(loginDto:LoginDto, responseListner:ResponseListner, errorListner:ErrorListner) {
         
         let urlString = "http://192.168.3.197:8080/v1/login"
-        
-        self.performHttpPostRequest(urlString: urlString, dto:loginDto);
+         
+        self.performHttpPostRequest(urlString: urlString, requestDto: loginDto, responseListner: responseListner, errorListner: errorListner)
     }
 
 }

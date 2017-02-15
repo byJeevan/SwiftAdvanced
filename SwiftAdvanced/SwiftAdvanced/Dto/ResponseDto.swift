@@ -16,7 +16,7 @@ class ResponseDto:NSObject, Mappable {
     override init() {
         super.init()
     }
-
+    
     required init?(map: Map) {
         
     }
@@ -27,4 +27,5 @@ class ResponseDto:NSObject, Mappable {
         message  <- map["message"]
     }
     
+  
 }
