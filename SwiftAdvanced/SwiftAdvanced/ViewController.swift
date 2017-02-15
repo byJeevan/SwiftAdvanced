@@ -9,7 +9,7 @@
 import UIKit
 
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
     
     @IBOutlet weak var userNameText: UITextField!
     @IBOutlet weak var passwordText: UITextField!
@@ -22,17 +22,17 @@ class ViewController: UIViewController {
     
     var form = Form()
     var loginDto = LoginDto()
-
-    
+ 
     public func moveToNext(loginResponseDto:ResponseDto) {
-        
-        //TODO : Push next screen
-        
+ 
+        let alertview = UIAlertView.init(title: "Success !", message: "You are now logged in", delegate: self, cancelButtonTitle: "OK");
+        alertview .show()
     }
     
-    
     @IBAction func signInAction(_ sender: Any) {
+        
         if self.form.isFormValid() {
+            
             self.view.updateDataObjectFromView() //Sync dto from newly entered values.
         
             let loginViewModel = LoginViewModel.init(withController:self);
@@ -43,18 +43,8 @@ class ViewController: UIViewController {
         }
     }
     
-    //Delegate of Login view model.
-    func willMoveFromLogin(resposneDto:ResponseDto) {
-        print("Now move to next screen")
-    }
-    
-    func willShowError(error:Error) {
-        print("Show error message")
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         //Creating Email Field.
         let emailField = Field(build: {

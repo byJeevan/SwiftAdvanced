@@ -35,6 +35,7 @@ class LoginViewModel : BaseViewModel {
         
         func errorListnerCallback(error: Error) {
             print("ERROR OCUURED");
+            self.viewController.showErrorResponse(error: error)
  
         }
     }
