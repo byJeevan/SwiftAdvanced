@@ -11,16 +11,22 @@ import UIKit
 class BaseAdapter: NSObject {
     
     //To Perform GET Request
-    func performHttpGetRequest(loginDto:NSDictionary, urlString:String) {
+    func performHttpGetRequest<T: Mappable>(urlString:String, requestDto:T, responseListner:ResponseListner, errorListner:ErrorListner){
         
         let internetURL = NSURL(string:urlString)
         let manager = AFHTTPSessionManager()
         manager.get((internetURL?.absoluteString)!, parameters: nil, progress: nil, success: {(_ task: URLSessionDataTask, _ responseObject: Any) -> Void in
             
-            //         self.jsonLoaded(json: responseObject)
+            if let jsonData = try? JSONSerialization.data(withJSONObject: responseObject, options: []) {
+                
+                if let jsonString = String(data: jsonData, encoding: String.Encoding.utf8) {
+                    responseListner.responseListerCallback(result: jsonString)
+                }
+            }
             
         }, failure: {(task: URLSessionDataTask?, error:Error) -> Void in
-            //         self.jsonFailed(error: errno as! Error)
+            
+            errorListner.errorListnerCallback(error: error)
         })
     }
     

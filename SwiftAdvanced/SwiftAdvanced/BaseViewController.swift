@@ -13,10 +13,8 @@ import UIKit
 class BaseViewController : UIViewController {
     
     func showErrorResponse(error:Error) {
-        
         let alertview = UIAlertView.init(title: "Opps!", message: self.getMessageFromError(error:error), delegate: self, cancelButtonTitle: "OK");
         alertview .show()
-        
     }
     
     func getMessageFromError(error:Error) -> String {
