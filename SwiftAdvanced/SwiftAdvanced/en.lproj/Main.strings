@@ -16,3 +16,17 @@
 
 /* Class = "UITextField"; placeholder = "Email"; ObjectID = "r15-aI-ek8"; */
 "r15-aI-ek8.placeholder" = "Email";
+
+"invalid.error.email" = "Email ID is not valid";
+"invalid.error.empty" = "Field cannot be empty";
+"invalid.error.number"= "Number is not valid";
+"invalid.error.alphabet" = "Alphabets only allowed";
+"invalid.error.alphanumeric" = "Alphabets or Numbers only allowed";
+"invalid.error.date" = "Date is not valid";
+"invalid.error.positive" = "Number is not postive";
+"invalid.error.monthyear" = "Month or Year not valid";
+"invalid.error.range" = "Range is not valid";
+"invalid.error.length" = "Length is not valid";
+"invalid.error.aadhaar" = "Aadhaar is not valid";
+"invalid.error.pan" = "Pan is not valid";
+"invalid.error.time" = "Time is not valid";
