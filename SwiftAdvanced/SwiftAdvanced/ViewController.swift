@@ -28,7 +28,7 @@ class ViewController: BaseViewController, UITextFieldDelegate {
  
     public func moveToNext(loginResponseDto:ResponseDto) {
  
-        let alertview = UIAlertView.init(title: "Success !", message: "You are now logged in", delegate: self, cancelButtonTitle: "OK");
+        let alertview = UIAlertView.init(title: "welcome", message: "You are now logged in", delegate: self, cancelButtonTitle: "OK");
         alertview .show()
     }
     
@@ -70,9 +70,16 @@ class ViewController: BaseViewController, UITextFieldDelegate {
         });
         self.form.addNewField(passField);
  
+     
         self.view.dataObject = loginDto
     }
     
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        super.viewDidAppear(animated);
+    
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
